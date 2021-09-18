@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Grouper {
+  /*z-index: 3;*/
+  width: 100%;
+  background-image: url(/pattern.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 38vw;
+}
+
+.Video {
+  display: flex;
+  background-color: aqua;
+  object-fit: cover;
+}
+
+@media (max-width:1200px) {
+  .Grouper {
+    top: 50vw;
+  }
+}

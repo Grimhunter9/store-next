@@ -1,0 +1,45 @@
+/*html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}*/
+
+
+nav {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  border-bottom: 1px solid white;
+}
+
+a:hover {
+  color: rgb(0, 119, 255);
+}
+
+li {
+
+  list-style: none;
+  color: aliceblue;
+}
+
+
+
+@media(max-width:1200px) {
+  li {
+    font-size: larger;
+  }
+}

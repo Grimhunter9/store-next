@@ -1,0 +1,27 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carcontainer {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    
+    height: 45vw;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.change {
+    transition: ease-in-out 0.8s;
+}
+
+.img {
+    width: 100vw;
+    height: 45vw;
+}

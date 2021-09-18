@@ -1,0 +1,149 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    border-top: 2.5px solid white;
+}
+
+.cardholder {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: fit-content;
+    border-radius: 5%;
+}
+
+.cardcontainer {
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/rule.jpg);
+    border: 2px solid white;
+    background-size: cover;
+    object-fit: cover;
+    width: 25vw;
+    height: 30vw;
+    border-radius: 5%;
+    transform: scale(1);
+}
+
+.cardcontainer:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.cardcontainer2 {
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("https://www1.djicdn.com/cms/uploads/bccdb5d218eb2c32dccb5c88babc7679.webp");
+    border: 2px solid white;
+    background-size: cover;
+    object-fit: cover;
+    transform: scale(1);
+    width: 25vw;
+    height: 30vw;
+    border-radius: 5%;
+}
+
+.cardcontainer2:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.cardcontainer3 {
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/company.jpg);
+    border: 2px solid white;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    transform: scale(1);
+    width: 25vw;
+    height: 30vw;
+    border-radius: 5%;
+}
+
+.cardcontainer3:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.h1 {
+    font-size: 2vw;
+    color: white;
+    font-weight: bolder;
+    margin-top: 1vw;
+}
+
+.paragraph {
+    margin-top: 2vw;
+    color: white;
+    font-size: 1vw;
+}
+
+.learn {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.learn:hover {
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+    color: white;
+}
+
+.divlearn {
+    margin-top: 2vw;
+}
+
+@media(max-width:1200px) {
+    .cardholder {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        margin-top: 5vw;
+    }
+
+
+    .cardcontainer {
+        width: 60vw;
+        height: 60vw;
+    }
+
+
+    .cardcontainer2 {
+        width: 60vw;
+        height: 60vw;
+    }
+
+
+    .cardcontainer3 {
+        width: 60vw;
+        height: 60vw;
+    }
+
+
+
+    .h1 {
+        font-size: 5vw;    
+        font-weight: bolder;
+        margin-top: 5vw;
+    }
+
+
+    .paragraph {
+        margin-top: 2vw;
+        font-size: 4vw;
+    }
+
+
+}
