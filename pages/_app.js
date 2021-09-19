@@ -1,9 +1,9 @@
 import Head from "../Html/html"
 /******************************************************************/
-import Navbar from "../Components/Header/Header"
+import Navbar from "../Components/Header/header"
 /******************************************************************/
 import '../styles/globals.css'
-import "../Components/Header/Header.css"
+import "../Components/Header/header.css"
 export default function MyApp({ Component, pageProps }) {
 
   if (Component.Layout) {
