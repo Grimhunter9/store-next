@@ -47,7 +47,7 @@ export default function About() {
                         </div>
 
                         <div className={styles.divlearn}>
-                            <Link href="/Card3/Companies" className={styles.learn}>Learn more here ⮞</Link>
+                            <Link href="/Card2/Companies" className={styles.learn}>Learn more here ⮞</Link>
                         </div>
 
                     </div>
