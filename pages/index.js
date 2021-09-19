@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import { sanityclient } from '../lib/client'
-import Screen from '../Components/Veiwer/screen';
+import Screen from "../Components/Veiwer/Screen"
 import About from '../Components/About/about';
 
 

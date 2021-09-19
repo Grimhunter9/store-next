@@ -1,5 +1,4 @@
-import ReactPlayer from "react-player";
-import styles from "../../styles/Screen.module.css"
+import styles from "./screen.module.css"
 
 export default function Screen({ Test }) {
 
