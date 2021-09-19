@@ -1,5 +1,4 @@
 import styles from "./about.module.css"
-import Link from "next/link"
 import Modal from 'react-bootstrap/Modal'
 import { Button } from 'react-bootstrap';
 import { useState } from "react";
