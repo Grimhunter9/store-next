@@ -1,4 +1,4 @@
-import styles from "../../styles/Info.module.css"
+import styles from "./Info.module.css"
 import Carousel from 'react-bootstrap/Carousel'
 
 export default function Info() {

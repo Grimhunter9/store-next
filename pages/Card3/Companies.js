@@ -1,5 +1,5 @@
 
-import styles from "../../styles/companies.module.css"
+import styles from "./companies.module.css"
 
 export default function companies() {
 

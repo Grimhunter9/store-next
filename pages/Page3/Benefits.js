@@ -1,4 +1,4 @@
-import styles from '../../styles/Benefits.module.css'
+import styles from './Benefits.module.css'
 
 export default function Benefits() {
   return (

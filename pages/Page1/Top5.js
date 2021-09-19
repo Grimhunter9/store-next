@@ -1,4 +1,4 @@
-import styles from '../../styles/Top5.module.css'
+import styles from './Top5.module.css'
 import { sanityclient } from '../../lib/client'
 import { PortableText } from '../../lib/client';
 

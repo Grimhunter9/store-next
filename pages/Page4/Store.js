@@ -1,4 +1,4 @@
-import styles from '../../styles/Store.module.css'
+import styles from './Store.module.css'
 
  export default function Store() {
      return(
