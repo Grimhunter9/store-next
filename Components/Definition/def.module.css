@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid white;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.img {
+    width: 50vw;
+    height: 25vw;
+}
+
+.h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 2vw;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    margin-left: 11vw;
+    animation: fadein 4s;
+}
+
+.textcontainer{
+    display: flex;
+    text-align: left;
+    margin-top: 2vw;
+}
+
+.p1 {
+    color: white;
+    margin-left: 12vw;
+    margin-right: 8vw;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    filter: contrast(100);
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

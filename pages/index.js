@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
 import { sanityclient } from '../lib/client'
 import Screen from "../Components/Veiwer/Screen"
+import Definition from '../Components/Definition/def';
 import About from '../Components/About/about';
 
 
@@ -18,6 +19,11 @@ export default function Home({ Test }) {
             <Screen Test={Test} />
 
             <div className={styles.Grouper}>
+
+                <Definition />
+
+                <hr style={{borderBottom:"2px solid white", marginLeft:"10vw", marginRight:"7vw"}}/>
+        
 
                 <About />
 

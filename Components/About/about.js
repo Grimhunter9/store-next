@@ -8,7 +8,9 @@ export default function About() {
         <div className={styles.About}>
 
 
-            <div style={{ color: "white" }}><h1>About drones</h1></div>
+            <div className={styles.about} >
+                <h1 className={styles.ad}>*About drones</h1>
+            </div>
 
             <div className={styles.cardholder}>
 
