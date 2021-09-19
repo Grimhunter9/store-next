@@ -14,7 +14,7 @@ export default function Info() {
         <Carousel.Item interval={4000} className={styles.change}>
           <img
             className="d-block w-100"
-            className={styles.img}
+            /*className={styles.img}*/
             src="/drone.jpg"
             alt="First slide"
           />
@@ -29,7 +29,7 @@ export default function Info() {
         <Carousel.Item interval={4000} className={styles.change}>
           <img
             className="d-block w-100"
-            className={styles.img}
+            /*className={styles.img}*/
             src="/drone2.jpg"
             alt="Second slide"
           />
@@ -43,7 +43,7 @@ export default function Info() {
         <Carousel.Item interval={4000} className={styles.change}>
           <img
             className="d-block w-100"
-            className={styles.img}
+            /*className={styles.img}*/
             src="/drone-screen.jpg"
             alt="Third slide"
           />

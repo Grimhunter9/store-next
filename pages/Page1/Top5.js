@@ -27,19 +27,19 @@ export default function Top5({ hello }) {
                 {
                     hello && hello.map((hum) => (
 
-                        <div className={styles.try} >
+                        <div key={hum.id} className={styles.try} >
 
                             <video width="100%" height="650px" loop={true} autoPlay={true} controls={false} muted={true}>
                                 <source src={hum.vid.asset.url} type="video/mp4" />
                             </video>
 
-                            <div className={styles.title}><h1 style={{ fontWeight: "bolder" }}>{hum.title}</h1></div>
+                            <div key={hum.title} className={styles.title}><h1 style={{ fontWeight: "bolder" }}>{hum.title}</h1></div>
 
-                            <div className={styles.textcontainer}><PortableText blocks={hum.description} /></div>
+                            <div key={hum.description} className={styles.textcontainer}><PortableText blocks={hum.description} /></div>
 
                             <div className={styles.featurecontainer}>
                                 <h1 style={{ color: "white", marginLeft: "7.5vw", fontWeight: "bolder" }}>Features:</h1>
-                                <ul style={{ listStyle: "none" }} key={hum.features}>
+                                <ul  style={{ listStyle: "none" }} key={hum.features}>
                                     <li className={styles.list}>
                                         <PortableText blocks={hum.features} />
                                     </li>

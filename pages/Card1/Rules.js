@@ -1,12 +1,20 @@
 
 import styles from "../../styles/Rules.module.css";
+import {Modal} from 'react-bootstrap/Modal'
+import { Button} from "react-bootstrap";
+import { useState } from "react";
 export default function rules() {
+
+
 
     return (
 
-        <div className={styles.background}>
+        <div>
 
-            <div className={styles.container}>
+
+  
+
+            {/*<div className={styles.container}>
 
                 <div>
                     <h1 className={styles.h1}>*Here are some rules for flying a drone</h1>
@@ -96,11 +104,13 @@ export default function rules() {
 
 
 
-            </div>
+    </div>*/}
 
 
 
 
         </div>
     )
+
 }
+
