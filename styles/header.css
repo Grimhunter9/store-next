@@ -104,7 +104,7 @@
     .toggle-btn {
         display: flex;
         position: static;
-        background: white;
+        background: white !important;
         font-size: 5vw;
     }
     .collapse {

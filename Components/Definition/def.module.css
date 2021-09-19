@@ -26,7 +26,7 @@
     animation: fadein 4s;
 }
 
-.textcontainer{
+.textcontainer {
     display: flex;
     text-align: left;
     margin-top: 2vw;
@@ -49,4 +49,29 @@
     to {
         opacity: 1;
     }
+}
+
+@media(max-width:1200px) {
+
+    .h1 {
+        display: flex;
+        font-size: 9vw;
+        margin-left: 12vw;
+        margin-top: 5vw;
+    }
+
+    .imgcontainer {
+        margin-top: 5vw;
+    }
+
+    .img {
+        width: 80vw;
+        height: 50vw;
+    }
+
+    .p1{
+        font-size:7vw;
+
+    }
+
 }

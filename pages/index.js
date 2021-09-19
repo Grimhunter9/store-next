@@ -27,6 +27,8 @@ export default function Home({ Test }) {
 
                 <About />
 
+                <div style={{marginTop:"3vw"}}></div>
+
             </div>
 
 
