@@ -9,7 +9,7 @@ export default function rules() {
 
     return (
 
-        <div>
+        <div className={styles.background}>
 
 
 
