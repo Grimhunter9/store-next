@@ -5,6 +5,7 @@ import Navbar from "../Components/Header/header"
 import '../styles/globals.css'
 import "../styles/header.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default function MyApp({ Component, pageProps }) {
 
   if (Component.Layout) {
@@ -14,7 +15,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head />
-
+     
       <Navbar />
 
       <Component {...pageProps} />

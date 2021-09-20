@@ -7,6 +7,7 @@ const Try = `*[_type=="top5"]{
     number,
     description,
     features,
+    poster{asset->{url}},
     vid{asset->{url},  
 }}`
 
@@ -36,6 +37,8 @@ export default function Top5({ hello }) {
                             <div key={hum.title} className={styles.title}><h1 style={{ fontWeight: "bolder" }}>{hum.title}</h1></div>
 
                             <div key={hum.description} className={styles.textcontainer}><PortableText blocks={hum.description} /></div>
+
+                            <div><img src={hum.poster.asset.url}/></div>
 
                             <div className={styles.featurecontainer}>
                                 <h1 style={{ color: "white", marginLeft: "7.5vw", fontWeight: "bolder" }}>Features:</h1>

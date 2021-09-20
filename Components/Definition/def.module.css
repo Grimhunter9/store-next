@@ -10,10 +10,12 @@
     height: 100%;
     flex-direction: column;
     background-position: center;
+    
 }
 
 .h1 {
-    font-weight: bold;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px blue;
     font-size: 50px;
     position: absolute;
     left: 170px;
@@ -32,10 +34,11 @@
 
 .p1 {
     font-family: 'Cormorant Garamond', serif;
+    text-shadow: 2px 2px 2px blanchedalmond;
     font-size: 25px;
     padding-top: 10%;
     color: black;
-    font-weight: bold;
+    font-weight: bolder;
     filter: contrast(100);
     animation: fadein 6s;
 }

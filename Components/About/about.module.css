@@ -11,30 +11,19 @@
 }
 
 .ad {
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 50px;
     margin-top: 2vw;
     font-family: 'Playfair Display', serif;
     color: white;
     margin-left: 11vw;
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: fadein 6s;
+    text-shadow: 3px 3px 3px blue;
 }
 
-.glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-   
-}
 
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px 0 0 30px skyblue, 0 0 40px, 0 0 50px skyblue;
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px skyblue;
-    }
-}
+
+
     .cardholder {
         display: flex;
         justify-content: space-around;
@@ -88,8 +77,8 @@
         margin-top: 1vw;
     }
     .con {
-        /*background-image: url(/pattern.jpg);
-    background-size: cover;*/
+      /*background-image: url(/pattern.jpg);
+        background-size: cover;*/
         border-top: none;
         background: #1E1C1F;
     }

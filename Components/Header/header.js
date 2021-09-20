@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { Navbar, Nav } from 'react-bootstrap';
 import { BsSearch } from "react-icons/bs";
 import 'bootstrap/dist/css/bootstrap.css'
-import { useState } from 'react';
 
 export default function header() {
 
