@@ -1,13 +1,14 @@
 .container {
     display: flex;
     border-top: 2px solid white;
+    flex-direction: column;
 }
 
 .back {
     display: flex;
     width: 100%;
-    height: 45vw;
-    position: static;
+    height: 100%;
+    flex-direction: column;
     background-position: center;
 }
 
@@ -25,18 +26,22 @@
 .textcontainer {
     display: flex;
     text-align: left;
-    margin-left: 15vw;
-    margin-right: 4vw;
+    padding-left: 15vw;
+    padding-right: 4vw;
 }
 
 .p1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
-    margin: 8vw;
+    padding-top: 10%;
     color: black;
     font-weight: bold;
     filter: contrast(100);
     animation: fadein 6s;
+}
+
+.About{
+    margin-top: 5vw;
 }
 
 @keyframes fadein {

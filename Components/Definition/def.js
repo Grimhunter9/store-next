@@ -1,4 +1,5 @@
 import styles from "./def.module.css"
+import About from "../About/about"
 import { PortableText } from "../../lib/client"
 
 
@@ -11,9 +12,17 @@ export default function def({ Def }) {
 
                 <h1 className={styles.h1} key={Def[0].title}>{Def[0].title}</h1>
 
-                <div className={styles.textcontainer} key={Def[0].description}><p className={styles.p1}><PortableText blocks={Def[0].description} className={styles.p1} /></p></div>
+                <div className={styles.textcontainer} key={Def[0].description}><p className={styles.p1}>{Def[0].description}</p></div>
+
+                <div className={styles.About}>
+                    <About />
+                </div>
 
             </div>
+
+
+
+
 
         </div>
     )

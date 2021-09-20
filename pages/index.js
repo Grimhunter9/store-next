@@ -20,25 +20,22 @@ const grape = `*[_type=='definition']{
 
 
 
-export default function Home({ Test , Def }) {
- 
+export default function Home({ Test, Def }) {
 
     return (
         <div className={styles.container}>
-
 
             <Screen Test={Test} />
 
             <div className={styles.Grouper}>
 
-                <Definition  Def={Def} />
+                <Definition Def={Def} />
 
-                <hr style={{ borderBottom: "2px solid white", marginLeft: "10vw", marginRight: "7vw" }} />
+                {/*<hr style={{ borderBottom: "2px solid white", marginLeft: "10vw", marginRight: "7vw" }} />*/}
 
 
-                <About />
 
-                <div style={{ marginTop: "3vw" }}></div>
+
 
             </div>
 
@@ -46,6 +43,13 @@ export default function Home({ Test , Def }) {
         </div>
     )
 }
+
+
+
+
+
+
+
 
 
 
@@ -60,10 +64,10 @@ export async function getStaticProps() {
             Def
         }
 
-        
+
     }
-    
-    
+
+
 }
 
 

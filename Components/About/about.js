@@ -8,6 +8,7 @@ export default function About() {
 
 
     const [modalShow, setModalShow] = useState(false);
+    
     const [modalShow2, setModalShow2] = useState(false)
 
     const view = () => setModalShow(!modalShow);

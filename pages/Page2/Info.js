@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 export default function Info() {
 
+
   return (
 
     <div className={styles.Container} >
@@ -56,7 +57,7 @@ export default function Info() {
         </Carousel.Item>
 
 
-        
+
 
       </Carousel>
 
