@@ -3,11 +3,11 @@ import { sanityclient } from '../../lib/client'
 import { PortableText } from '../../lib/client';
 
 const Try = `*[_type=="top5"]{
+    
     title,
     number,
     description,
     features,
-    poster{asset->{url}},
     vid{asset->{url},  
 }}`
 
@@ -38,7 +38,7 @@ export default function Top5({ hello }) {
 
                             <div key={hum.description} className={styles.textcontainer}><PortableText blocks={hum.description} /></div>
 
-                            <div><img src={hum.poster.asset.url}/></div>
+                           
 
                             <div className={styles.featurecontainer}>
                                 <h1 style={{ color: "white", marginLeft: "7.5vw", fontWeight: "bolder" }}>Features:</h1>

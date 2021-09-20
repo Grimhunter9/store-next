@@ -4,13 +4,16 @@ import Screen from "../Components/Veiwer/Screen"
 import Definition from '../Components/Definition/def';
 import About from '../Components/About/about';
 
+/****************************************************************************************************/
 
+//this query is for the video screen in the home page 
 const hello = `*[_type=='video']{
     title,
     vid{asset->{url},    
 }}`
 
 
+//this query is for the page in the defenition file 
 const grape = `*[_type=='definition']{
 
     title,
@@ -20,7 +23,10 @@ const grape = `*[_type=='definition']{
 
 
 
-export default function Home({ Test, Def }) {
+/******************************************************************************************************/
+
+
+export default function Home({ Test, Def, rul }) {
 
     return (
         <div className={styles.container}>
@@ -31,11 +37,7 @@ export default function Home({ Test, Def }) {
 
                 <Definition Def={Def} />
 
-                {/*<hr style={{ borderBottom: "2px solid white", marginLeft: "10vw", marginRight: "7vw" }} />*/}
-
-
-
-
+               
 
             </div>
 
@@ -48,25 +50,13 @@ export default function Home({ Test, Def }) {
 
 
 
-
-
-
-
-
 export async function getStaticProps() {
     const Test = await sanityclient.fetch(hello);
-    const Def = await sanityclient.fetch(grape)
+    const Def = await sanityclient.fetch(grape);
     return {
-        props: {
-
-            Test,
-
-            Def
-        }
-
+        props: { Test, Def }
 
     }
-
 
 }
 

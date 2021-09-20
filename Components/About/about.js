@@ -127,11 +127,11 @@ export default function About() {
 
                                     <p className={styles.paragraph2}>No person may act or attempt to act as a crewmember of a civil aircraft—
 
-                                        (1) Within 8 hours after the consumption of any alcoholic beverage;
+                                        (1) Within 8 hours after the consumption of any alcoholic beverage,
 
-                                        (2) While under the influence of alcohol;
+                                        (2) While under the influence of alcohol,
 
-                                        (3) While using any drug that affects the person’s faculties in any way contrary to safety; or
+                                        (3) While using any drug that affects the person’s faculties in any way contrary to safety or
 
                                         (4) While having an alcohol concentration of 0.04 or greater in a blood or breath specimen. Alcohol concentration means grams of alcohol per deciliter of blood or grams of alcohol per 210 liters of breath.</p>
 
