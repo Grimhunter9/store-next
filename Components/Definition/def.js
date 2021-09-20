@@ -1,33 +1,30 @@
 import styles from "./def.module.css"
+import { PortableText } from "../../lib/client"
 
-export default function def() {
- 
+
+export default function def({ Def }) {
+
     return (
         <div className={styles.container}>
-            
-            <h1 className={styles.h1}>*What is a Drone ?</h1>
 
-            <div className={styles.imgcontainer}>
+            <div className={styles.back} key={Def[0]} style={{ background: `url(${Def[0].poster.asset.url})`, backgroundSize: "cover" }}>
 
-                <img className={styles.img} src="/what.jpg" alt="definition of a drone" />
+                <h1 className={styles.h1} key={Def[0].title}>{Def[0].title}</h1>
 
-            </div>
-
-            <div className={styles.textcontainer}>
-
-                <p className={styles.p1}>The term “drone” usually refers to any unpiloted aircraft.
-                    Sometimes referred to as “Unmanned Aerial Vehicles" (UAVs),
-                    these crafts can carry out an impressive range of tasks,
-                    ranging from military operations to package delivery.
-                    Drones can be as large as an aircraft or as small as the palm of your hand.</p>
+                <div className={styles.textcontainer} key={Def[0].description}><p className={styles.p1}><PortableText blocks={Def[0].description} className={styles.p1} /></p></div>
 
             </div>
-
-
-
 
         </div>
     )
 }
+
+
+
+
+
+
+
+
 
 

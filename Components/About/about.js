@@ -42,7 +42,7 @@ export default function About() {
                             <p onClick={view} className={styles.learn}>Learn more here ⮞</p>
                         </div>
 
-                        <Modal show={modalShow} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+                        <Modal onClick={view} show={modalShow} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
 
                             <Modal.Header style={{ background: "#1E1C1F", color: "white" }}>
 
@@ -169,7 +169,7 @@ export default function About() {
                             <p onClick={view2} className={styles.paragraph}>Learn more here ⮞</p>
                         </div>
 
-                        <Modal show={modalShow2} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+                        <Modal onClick={view2} show={modalShow2} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
 
                             <Modal.Header style={{ background: "#1E1C1F", color: "white" }}>
 

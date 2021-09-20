@@ -10,7 +10,18 @@ const hello = `*[_type=='video']{
     vid{asset->{url},    
 }}`
 
-export default function Home({ Test }) {
+
+const grape = `*[_type=='definition']{
+
+    title,
+    description,
+    poster{asset->{url},    
+}}`
+
+
+
+export default function Home({ Test , Def }) {
+ 
 
     return (
         <div className={styles.container}>
@@ -20,14 +31,14 @@ export default function Home({ Test }) {
 
             <div className={styles.Grouper}>
 
-                <Definition />
+                <Definition  Def={Def} />
 
-                <hr style={{borderBottom:"2px solid white", marginLeft:"10vw", marginRight:"7vw"}}/>
-        
+                <hr style={{ borderBottom: "2px solid white", marginLeft: "10vw", marginRight: "7vw" }} />
+
 
                 <About />
 
-                <div style={{marginTop:"3vw"}}></div>
+                <div style={{ marginTop: "3vw" }}></div>
 
             </div>
 
@@ -36,15 +47,29 @@ export default function Home({ Test }) {
     )
 }
 
+
+
 export async function getStaticProps() {
-    const Test = await sanityclient.fetch(hello)
+    const Test = await sanityclient.fetch(hello);
+    const Def = await sanityclient.fetch(grape)
     return {
         props: {
 
-            Test
+            Test,
+
+            Def
         }
+
+        
     }
+    
+    
 }
+
+
+
+
+
 
 
 

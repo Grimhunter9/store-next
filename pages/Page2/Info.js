@@ -1,4 +1,5 @@
 import styles from "./Info.module.css"
+import image from "next/image"
 import Carousel from 'react-bootstrap/Carousel'
 
 export default function Info() {
