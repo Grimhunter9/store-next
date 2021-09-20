@@ -26,8 +26,8 @@
 .textcontainer {
     display: flex;
     text-align: left;
-    padding-left: 15vw;
-    padding-right: 4vw;
+    padding-left: 15%;
+    padding-right: 5%;
 }
 
 .p1 {
