@@ -23,13 +23,32 @@
 }
 
 .b {
+    display: inline-block;
     font-size: 2vw;
     margin-left: 5vw;
     color: white;
     font-family: poppins;
     letter-spacing: 0.2em;
     cursor: pointer;
+    
 }
+
+.b::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+.b:hover::after {
+    width: 100%;
+  
+}
+
+
+
 
 .search-box {
     width: fit-content;

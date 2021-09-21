@@ -43,10 +43,6 @@
     animation: fadein 6s;
 }
 
-.About{
-    margin-top: 5vw;
-}
-
 @keyframes fadein {
     from {
         opacity: 0;
@@ -55,6 +51,12 @@
         opacity: 1;
     }
 }
+
+.About{
+    margin-top: 5vw;
+}
+
+
 
 @media(max-width:1200px) {
     .back {

@@ -40,9 +40,7 @@
     .cardcontainer {
         justify-content: space-around;
         align-items: center;
-        background-image: url(/rule.jpg);
         border: 2px solid white;
-        background-size: cover;
         object-fit: cover;
         width: 25vw;
         height: 30vw;
@@ -56,9 +54,7 @@
     .cardcontainer3 {
         justify-content: space-around;
         align-items: center;
-        background-image: url(/company.jpg);
         border: 2px solid white;
-        background-size: cover;
         background-position: center;
         object-fit: cover;
         transform: scale(1);
@@ -66,6 +62,7 @@
         height: 30vw;
         border-radius: 5%;
     }
+
     .cardcontainer3:hover {
         transform: scale(1.1);
         transition: all 0.3s ease-in-out;
