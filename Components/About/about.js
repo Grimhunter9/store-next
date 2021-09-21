@@ -86,9 +86,7 @@ export default function About({ das, naf, hep }) {
 
                             </Modal.Body>
 
-                            <Modal.Footer className={styles.con}>
-                                <Button onClick={view}>Close</Button>
-                            </Modal.Footer>
+                          
 
 
 
@@ -159,9 +157,7 @@ export default function About({ das, naf, hep }) {
 
                             </Modal.Body>
 
-                            <Modal.Footer className={styles.con}>
-                                <Button onClick={view2}>Close</Button>
-                            </Modal.Footer>
+                         
 
                         </Modal>
 
