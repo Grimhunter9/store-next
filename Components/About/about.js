@@ -11,7 +11,11 @@ export default function About({ das, naf, hep }) {
 
     const [modalShow2, setModalShow2] = useState(false)
 
-    
+    const view = () => setModalShow(!modalShow);
+
+    const view2 = () => setModalShow2(!modalShow2)
+
+
 
     return (
 
@@ -82,7 +86,10 @@ export default function About({ das, naf, hep }) {
 
                             </Modal.Body>
 
-                            
+                            <Modal.Footer className={styles.con}>
+                                <Button onClick={view}>Close</Button>
+                            </Modal.Footer>
+
 
 
                         </Modal>
@@ -152,7 +159,9 @@ export default function About({ das, naf, hep }) {
 
                             </Modal.Body>
 
-                           
+                            <Modal.Footer className={styles.con}>
+                                <Button onClick={view2}>Close</Button>
+                            </Modal.Footer>
 
                         </Modal>
 
