@@ -3,9 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/pattern.jpg);
-    background-size: cover;
-    /*background: #1E1C20;*/
+    background: #1E1C20;
 }
 
 .info {
@@ -13,28 +11,27 @@
     font-size: 50px;
     font-family: fantasy;
     display: flex;
-    margin-left: 10vw;
-    margin-top: 2vw;
+    padding-left: 11%;
 }
 
 .try {
     display: flex;
     flex-direction: column;
-    margin-top: 5vw;
+    padding-top: 8%;
 }
 
 .title {
     display: flex;
     color: aliceblue;
-    margin-left: 8vw;
-    margin-top: 2vw;
+    padding-left: 7%;
+    padding-top: 2%;
 }
 
 .textcontainer {
     display: flex;
-    margin-left: 10vw;
-    margin-top: 2vw;
-    margin-right: 5vw;
+    padding-left: 8%;
+    padding-right: 5%;
+    padding-top: 2%;
     font-size: 30px;
     color: white;
     font-weight: bold;
@@ -42,15 +39,37 @@
 }
 
 .featurecontainer {
-    margin-top: 2vw;
+   padding-top: 2%;
+   
 }
 
 .list {
     font-weight: lighter;
-    font-size: 2vw;
-    margin-left: 6vw;
-    margin-top: 2vw;
+    padding-left: 5%;
+    padding-top: 2%;
+    font-size: 30px;
     display: flex;
-    line-height: 4vw;
+    line-height: 60px;
     color: aliceblue;
+}
+
+
+@media(max-width:1200px){
+
+
+   .info {
+        color: white;
+        font-size: 8vw;
+        font-family: fantasy;
+        display: flex;
+        padding-top: 20vw;
+    }
+
+     .try {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vw;
+        background-color: blueviolet;
+    }
+
 }

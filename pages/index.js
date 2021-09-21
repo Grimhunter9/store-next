@@ -54,11 +54,6 @@ const dap = `*[_type=="company"]{
 }}`
 
 
-
-
-
-
-
 /******************************************************************************************************/
 
 
@@ -73,18 +68,11 @@ export default function Home({ Test, Def, das, naf, hep}) {
 
                 <Definition Def={Def} das={das} naf={naf} hep={hep}  />
 
-
-
             </div>
-
 
         </div>
     )
 }
-
-
-
-
 
 export async function getStaticProps() {
     const Test = await sanityclient.fetch(hello);
@@ -95,6 +83,7 @@ export async function getStaticProps() {
 
 
     return {
+        
         props: { Test, Def, das, naf, hep}
 
     }

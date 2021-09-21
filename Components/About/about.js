@@ -40,7 +40,7 @@ export default function About({ das, naf, hep }) {
                         </div>
 
                         <div key={das[0]} >
-                            <p className={styles.paragraph}>{das[1].title}</p>
+                            <p className={styles.paragraph}>{das[0].title}</p>
                         </div>
 
 
@@ -104,7 +104,7 @@ export default function About({ das, naf, hep }) {
                     <div style={{ background: `url(${das[1].poster.asset.url})`, backgroundSize: "cover", backgroundPosition: "center" }} className={styles.cardcontainer3} >
 
                         <div key={das[1]}>
-                            <h1 className={styles.h1}>{das[0].header}</h1>
+                            <h1 className={styles.h1}>{das[1].header}</h1>
                         </div>
 
                         <div key={das[1]} >

@@ -9,6 +9,7 @@ const Try = `*[_type=="top5"]{
     description,
     features,
     vid{asset->{url},  
+
 }}`
 
 
@@ -65,7 +66,6 @@ export async function getStaticProps() {
     const hello = await sanityclient.fetch(Try)
     return {
         props: {
-
             hello
         }
     }
