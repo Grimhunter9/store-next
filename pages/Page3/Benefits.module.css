@@ -83,6 +83,14 @@
         margin-top: 5vw;
     }
 
+    .list {
+        font-weight: bolder;
+        font-size: 5vw;
+        display: flex;
+        padding-right: 5%;
+        padding-top: 2%;
+    }
+
     
     .img {
         width: 70vw;

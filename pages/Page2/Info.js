@@ -1,75 +1,100 @@
 import styles from "./Info.module.css"
-import image from "next/image"
 import Carousel from 'react-bootstrap/Carousel'
+import { sanityclient } from "../../lib/client"
+import { useState } from "react"
 
-export default function Info() {
+
+const ham = `*[_type=="information"]{
+
+  title,
+  description,
+  slider{asset->{url}},
+
+}`
+
+export default function Info({ yo }) {
+
+  const r = yo.length;
+
+  console.log(r)
+
+
 
 
   return (
 
     <div className={styles.Container} >
 
-
-
       <Carousel controls={false} fade className={styles.carcontainer}>
 
-        <Carousel.Item interval={4000} className={styles.change}>
-          <img
-            className="d-block w-100"
-            /*className={styles.img}*/
-            src="/drone.jpg"
-            alt="First slide"
-          />
+        {yo && yo.map((bye) => (
 
-          <Carousel.Caption style={{ background: "red" }}>
-            <h3>First slide label</h3>
-            <p>This is the drone (1) .</p>
-          </Carousel.Caption>
+          <Carousel.Item key={bye} interval={1000} className={styles.change}>
+            <img
+              key={bye.slider.asset.url}
+              className={styles.slider}
+              src={bye.slider.asset.url}
+            />
 
-        </Carousel.Item>
+            <Carousel.Caption >
+              <h1 key={bye.title}>{bye.title}</h1>
+            </Carousel.Caption>
 
-        <Carousel.Item interval={4000} className={styles.change}>
-          <img
-            className="d-block w-100"
-            /*className={styles.img}*/
-            src="/drone2.jpg"
-            alt="Second slide"
-          />
-
-          <Carousel.Caption style={{ background: "red" }}>
-            <h3>Second slide label</h3>
-            <p>This is the drone (2) .</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item interval={4000} className={styles.change}>
-          <img
-            className="d-block w-100"
-            /*className={styles.img}*/
-            src="/drone-screen.jpg"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption style={{ background: "red" }}>
-            <h3>Third slide label</h3>
-            <p>This is the drone (3) .</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+          </Carousel.Item>
 
 
-
+        ))}
 
       </Carousel>
 
 
 
 
+      <div >
+        <h1 className={styles.h1}>These are the different types of drones : </h1>
+      </div>
 
+
+      {yo && yo.map((hi) => (
+        <>
+
+          <div key={hi} className={styles.listcontainer}>
+
+            <div key={hi.slider.asset.url} className={styles.imgcontainer}>
+
+              <img src={hi.slider.asset.url} className={styles.img} alt="images of the benefits" />
+
+            </div>
+
+            <li key={hi.title} className={styles.list}>{hi.title}</li>
+
+            <p key={hi.description} className={styles.paragraph}>{hi.description}</p>
+
+          </div>
+        </>
+
+      ))}
 
 
 
     </div>
   )
+
+}
+
+export async function getStaticProps() {
+
+  const yo = await sanityclient.fetch(ham);
+
+  return {
+
+    props: {
+
+      yo
+
+    }
+  }
+
 
 }
 

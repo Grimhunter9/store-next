@@ -14,6 +14,7 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <div>
+      
       <Head />
      
       <Navbar />

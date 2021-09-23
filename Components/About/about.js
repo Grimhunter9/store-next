@@ -1,6 +1,5 @@
 import styles from "./about.module.css"
 import Modal from 'react-bootstrap/Modal'
-import { Button } from 'react-bootstrap';
 import { useState } from "react";
 
 
@@ -20,7 +19,7 @@ export default function About({ das, naf, hep }) {
     return (
 
 
-        <div    className={styles.About}>
+        <div className={styles.About}>
 
 
             <div className={styles.about} >
@@ -30,8 +29,9 @@ export default function About({ das, naf, hep }) {
             <div className={styles.cardholder}>
 
 
-                <div className={styles.wrapper}>
 
+
+                <div className={styles.wrapper}>
 
                     <div style={{ background: `url(${das[0].poster.asset.url})`, backgroundSize: "cover" }} className={styles.cardcontainer} >
 
@@ -53,7 +53,7 @@ export default function About({ das, naf, hep }) {
 
                             <Modal.Header style={{ background: "#1E1C1F", color: "white" }}>
 
-                                <Modal.Title id="contained-modal-title-vcenter">
+                                <Modal.Title className={styles.modalhead} id="contained-modal-title-vcenter">
                                     *Here are some rules for flying a drone
                                 </Modal.Title>
 
@@ -86,20 +86,17 @@ export default function About({ das, naf, hep }) {
 
                             </Modal.Body>
 
-                          
-
-
-
                         </Modal>
-
                     </div>
+
                 </div>
 
 
 
-                <div className={styles.wrapper}>
 
-                    <div style={{ background: `url(${das[1].poster.asset.url})`, backgroundSize: "cover", backgroundPosition: "center" }} className={styles.cardcontainer3} >
+
+                <div className={styles.wrapper}>
+                    <div style={{ background: `url(${das[1].poster.asset.url})`, backgroundSize: "cover", backgroundPosition: "center" }} className={styles.cardcontainer} >
 
                         <div key={das[1]}>
                             <h1 className={styles.h1}>{das[1].header}</h1>
@@ -119,7 +116,7 @@ export default function About({ das, naf, hep }) {
 
                             <Modal.Header style={{ background: "#1E1C1F", color: "white" }}>
 
-                                <Modal.Title id="contained-modal-title-vcenter">
+                                <Modal.Title  className={styles.modalhead} id="contained-modal-title-vcenter">
                                     *Here are Top best companies for selling drones
                                 </Modal.Title>
 
@@ -140,9 +137,9 @@ export default function About({ das, naf, hep }) {
 
                                             <div className={styles.listcontainer}>
 
-                                                <li className={styles.list}><a href={bye.url}>{bye.title}</a></li>
+                                                <li className={styles.list}><a  style={{textDecoration:"none"}} href={bye.url}>{bye.title}</a></li>
 
-                                                <p className={styles.paragraph3}>{bye.description}</p>
+                                                <p className={styles.paragraph2}>{bye.description}</p>
 
 
                                             </div>
@@ -157,7 +154,7 @@ export default function About({ das, naf, hep }) {
 
                             </Modal.Body>
 
-                         
+
 
                         </Modal>
 
@@ -167,6 +164,7 @@ export default function About({ das, naf, hep }) {
                     </div>
                 </div>
             </div>
+
 
 
         </div>

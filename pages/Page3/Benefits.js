@@ -9,7 +9,6 @@ const ben = `*[_type=="benefits"]{
 
 }}`
 
-
 export default function Benefits({ Fits }) {
   return (
     <div className={styles.background}>

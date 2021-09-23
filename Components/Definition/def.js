@@ -5,9 +5,9 @@ import About from "../About/about"
 export default function def({ Def, das, naf, hep}) {
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={{ background: `url(${Def[0].poster.asset.url})`, backgroundSize: "cover" }}>
 
-            <div className={styles.back} key={Def[0]} style={{ background: `url(${Def[0].poster.asset.url})`, backgroundSize: "cover" }}>
+            <div className={styles.back} key={Def[0]} >
 
                 <h1 className={styles.h1} key={Def[0].title}>{Def[0].title}</h1>
 
@@ -20,7 +20,6 @@ export default function def({ Def, das, naf, hep}) {
                 </div>
 
             </div>
-
 
         </div>
     )
