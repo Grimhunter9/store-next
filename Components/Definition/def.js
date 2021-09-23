@@ -1,7 +1,7 @@
 import styles from "./def.module.css"
 import About from "../About/about"
 
-
+ 
 export default function def({ Def, das, naf, hep}) {
 
     return (
