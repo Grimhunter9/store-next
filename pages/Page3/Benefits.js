@@ -1,23 +1,24 @@
 import styles from './Benefits.module.css'
 import { sanityclient } from '../../lib/client'
-import axios from 'axios'
 
 
 const ben = `*[_type=="benefits"]{
   title,
+  header,
   description,
+  background{asset->{url}},
   poster{asset->{url},  
 
 }}`
 
 export default function Benefits({ Fits }) {
   return (
-    <div className={styles.background}>
+    <div className={styles.background} style={{ background: `url(${Fits[0].background.asset.url})`, backgroundSize: "cover" }}>
 
       <div className={styles.container}>
 
         <div>
-          <h1 className={styles.h1}>*Here are 10 the reasons to buy a drone</h1>
+          <h1 key={Fits[0]} className={styles.h1}>{Fits[0].header}</h1>
         </div>
 
         {

@@ -5,7 +5,7 @@ import { PortableText } from '../../lib/client';
 const Try = `*[_type=="top5"]{
     
     title,
-    number,
+    header,
     description,
     features,
     vid{asset->{url},  
@@ -24,7 +24,7 @@ export default function Top5({ hello }) {
 
 
             <div style={{ marginTop: "10vw", display: "flex", flexDirection: "column" }}>
-                <div className={styles.info}>Here are the Top 5 best drones:</div>
+                <div key={hello[0]} className={styles.info}>{hello[0].header}</div>
 
                 {
                     hello && hello.map((hum) => (

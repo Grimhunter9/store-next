@@ -1,12 +1,12 @@
 import styles from "./Info.module.css"
 import Carousel from 'react-bootstrap/Carousel'
 import { sanityclient } from "../../lib/client"
-import { useState } from "react"
 
 
 const ham = `*[_type=="information"]{
 
   title,
+  header,
   description,
   slider{asset->{url}},
 
@@ -51,7 +51,7 @@ export default function Info({ yo }) {
 
 
       <div >
-        <h1 className={styles.h1}>These are the different types of drones : </h1>
+        <h1 key={yo[0]} className={styles.h1}>{yo[0].header}</h1>
       </div>
 
 

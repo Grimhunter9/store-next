@@ -23,7 +23,7 @@ export default function About({ das, naf, hep }) {
 
 
             <div className={styles.about} >
-                <h1 className={styles.ad}>*About drones</h1>
+                <h1 key={das[0]} className={styles.ad}>{das[0].name}</h1>
             </div>
 
             <div className={styles.cardholder}>

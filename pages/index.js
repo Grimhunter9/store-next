@@ -26,6 +26,7 @@ const grape = `*[_type=='definition']{
 const flip = `*[_type=="cards"]{
 
     header,
+    name,
     title,
     info,
     poster{asset->{url},    
