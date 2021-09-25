@@ -34,7 +34,7 @@ const flip = `*[_type=="cards"]{
 //this query is for the first card for rules in the about page
 
 const flap = `*[_type=="rules"]{
-
+    header,
     reason,
     description,
     poster{asset->{url},  
@@ -48,6 +48,7 @@ const flap = `*[_type=="rules"]{
 const dap = `*[_type=="company"]{
 
     title,
+    header,
     description,
     url,
     poster{asset->{url},    
@@ -57,7 +58,7 @@ const dap = `*[_type=="company"]{
 /******************************************************************************************************/
 
 
-export default function Home({ Test, Def, das, naf, hep}) {
+export default function Home({ Test, Def, das, naf, hep }) {
 
     return (
         <div className={styles.container}>
@@ -66,7 +67,7 @@ export default function Home({ Test, Def, das, naf, hep}) {
 
             <div className={styles.Grouper}>
 
-                <Definition Def={Def} das={das} naf={naf} hep={hep}  />
+                <Definition Def={Def} das={das} naf={naf} hep={hep} />
 
             </div>
 
@@ -83,8 +84,8 @@ export async function getStaticProps() {
 
 
     return {
-        
-        props: { Test, Def, das, naf, hep}
+
+        props: { Test, Def, das, naf, hep }
 
     }
 

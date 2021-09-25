@@ -53,8 +53,8 @@ export default function About({ das, naf, hep }) {
 
                             <Modal.Header style={{ background: "#1E1C1F", color: "white" }}>
 
-                                <Modal.Title className={styles.modalhead} id="contained-modal-title-vcenter">
-                                    *Here are some rules for flying a drone
+                                <Modal.Title key={naf} className={styles.modalhead} id="contained-modal-title-vcenter">
+                                    {naf[0].header}
                                 </Modal.Title>
 
                             </Modal.Header>
@@ -63,7 +63,7 @@ export default function About({ das, naf, hep }) {
 
                                 <div className={styles.imgcontainer}>
 
-                                    <img className={styles.img} src="/dronerule.jpg" alt="" />
+                                    <img key={naf[0]} className={styles.img} src={naf[0].poster.asset.url} alt="" />
 
                                 </div>
 
@@ -116,8 +116,8 @@ export default function About({ das, naf, hep }) {
 
                             <Modal.Header style={{ background: "#1E1C1F", color: "white" }}>
 
-                                <Modal.Title  className={styles.modalhead} id="contained-modal-title-vcenter">
-                                    *Here are Top best companies for selling drones
+                                <Modal.Title key={hep[0]}  className={styles.modalhead} id="contained-modal-title-vcenter">
+                                    {hep[0].header}
                                 </Modal.Title>
 
                             </Modal.Header>
@@ -126,9 +126,9 @@ export default function About({ das, naf, hep }) {
 
                                 <div className={styles.container}>
 
-                                    <div className={styles.imgcontainer}>
+                                    <div key={hep[0]} className={styles.imgcontainer}>
 
-                                        <img className={styles.img} src="/com.jpg" alt="" />
+                                        <img key={hep[0]} className={styles.img} src={hep[0].poster.asset.url} alt="" />
 
                                     </div>
 
