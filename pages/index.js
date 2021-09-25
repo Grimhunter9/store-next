@@ -28,7 +28,7 @@ const flip = `*[_type=="cards"]{
     header,
     name,
     title,
-    info,
+    info, 
     poster{asset->{url},    
 }}`
 
