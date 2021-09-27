@@ -19,7 +19,7 @@
     color: white;
     padding-left: 11%;
     animation: fadein 6s;
-    text-shadow: 3px 3px 3px blue;
+    text-shadow: 3px 3px 3px #4D3545;
 }
 
 .cardholder {
@@ -90,7 +90,6 @@
 
 .paragraph2 {
     color: bisque;
-    text-align: left;
     font-size: 20px;
     padding-right: 2%;
     padding-top: 2%;

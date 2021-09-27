@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import { sanityclient } from '../lib/client'
 import Screen from "../Components/Veiwer/Screen"
 import Definition from '../Components/Definition/def';
+import Footer from "../Components/Footer/footer"
 
 /****************************************************************************************************/
 
@@ -71,6 +72,8 @@ export default function Home({ Test, Def, das, naf, hep }) {
                 <Definition Def={Def} das={das} naf={naf} hep={hep} />
 
             </div>
+            
+            <Footer/>
 
         </div>
     )

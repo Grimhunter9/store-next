@@ -19,6 +19,7 @@ export default function MyApp({ Component, pageProps }) {
      
       <Navbar />
 
+
       <Component {...pageProps} />
 
     </div>

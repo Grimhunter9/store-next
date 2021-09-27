@@ -13,7 +13,7 @@
 
 .h1 {
     font-weight: bolder;
-    text-shadow: 3px 3px 3px blue;
+    text-shadow: 3px 3px 3px #4D3545;
     font-size: 50px;
     position: absolute;
     left: 170px;

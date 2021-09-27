@@ -7,12 +7,12 @@ const Try = `*[_type=="top5"]{
     title,
     header,
     description,
+    year,
+    feat,
     features,
+    poster{asset->{url}},
     vid{asset->{url},  
-
 }}`
-
-
 
 export default function Top5({ hello }) {
 
@@ -31,9 +31,13 @@ export default function Top5({ hello }) {
 
                         <div key={hum.id} className={styles.try} >
 
-                            <video className={styles.Video} width="100%" height="650px" loop={true} autoPlay={true} controls={false} muted={true}>
-                                <source src={hum.vid.asset.url} type="video/mp4" />
-                            </video>
+
+                            <div key={hum} className={styles.imgcontainer2}>
+
+                                <img key={hum.poster} src={hum.poster.asset.url} className={styles.img} alt="images of the benefits" />
+
+                            </div>
+
 
 
                             <div key={hum.title}><h1 className={styles.title}>{hum.title}</h1></div>
@@ -41,14 +45,27 @@ export default function Top5({ hello }) {
                             <div key={hum.description} className={styles.textcontainer}><PortableText blocks={hum.description} /></div>
 
 
+
+                            <h1 className={styles.feat}>Released:</h1>
+                            <div key={hum.year}><h1 className={styles.title}>{hum.year}</h1></div>
+
+
+
+
                             <div className={styles.featurecontainer}>
-                                <h1 className={styles.feat}>Features:</h1>
-                                <ul  style={{ listStyle: "none" }} key={hum.features}>
-                                    <li className={styles.list}>
+                                <h1 key={hello[0]} className={styles.feat}>{hello[0].feat}</h1>
+                                <ul className={styles.list} style={{ listStyle: "none" }} key={hum.features}>
+                                    <li >
                                         <PortableText blocks={hum.features} />
                                     </li>
                                 </ul>
                             </div>
+
+                            <video className={styles.Video} width="100%" height="650px" autoPlay={false} controls={true}>
+                                <source style={{ background: "red" }} src={hum.vid.asset.url} type="video/mp4" />
+                            </video>
+
+
 
 
                         </div>
@@ -56,6 +73,8 @@ export default function Top5({ hello }) {
                 }
 
             </div>
+
+
 
         </div >
     )

@@ -29,18 +29,22 @@ export default function header() {
 
 
 
-                        <div className="search-box">
-                            <button className="btn-search">
-
-                                <BsSearch className="search-icon" />
-
-                            </button>
-
-                            <input type="text" className="input-search" placeholder="Type to Search..." />
-
-                        </div>
 
                     </Nav>
+
+                    <div className="search-box">
+                        <button className="btn-search">
+
+                            <BsSearch className="search-icon" />
+
+                        </button>
+
+                        <input type="text" className="input-search" placeholder="Type to Search..." />
+
+                    </div>
+
+
+
 
                 </Navbar.Collapse>
             </Navbar>

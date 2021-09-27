@@ -2,36 +2,37 @@
     z-index: 3;
     position: absolute;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.377);
+
 }
 
 .log {
-    /*display: flex;
-    width: 5vw;
-    position: static;
-    margin-left: 10vw;
-    object-fit: contain;*/
     display: flex;
-    width: 5vw;
+    width: 4vw;
     margin-left: 10vw;
 }
 
 .Navbar {
     display: flex;
+    width: 80%;
     justify-content: space-around;
-    margin-left: 5vw;
+    
+    
 }
 
 .b {
     display: inline-block;
-    font-size: 2vw;
-    margin-left: 5vw;
+    font-size: 1.5vw;
+    padding-top: 1%;
+    padding-left: 1%;
     color: white;
     font-family: poppins;
     letter-spacing: 0.2em;
     cursor: pointer;
     
 }
+
+
 
 .b::after {
     content: '';
@@ -47,14 +48,13 @@
   
 }
 
-
-
-
 .search-box {
     width: fit-content;
     height: fit-content;
     position: relative;
-    margin-left: 5vw;
+    margin-left :14%;
+    
+    
 }
 
 .input-search {

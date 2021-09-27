@@ -72,18 +72,14 @@ export default function About({ das, naf, hep }) {
 
                                         <div className={styles.listcontainer}>
 
-
                                             <li className={styles.list}>{hi.reason}</li>
 
                                             <p className={styles.paragraph2}>{hi.description}</p>
 
                                         </div>
-
-
                                     ))
                                 }
-
-
+                                
                             </Modal.Body>
 
                         </Modal>
@@ -137,7 +133,7 @@ export default function About({ das, naf, hep }) {
 
                                             <div className={styles.listcontainer}>
 
-                                                <li className={styles.list}><a  style={{textDecoration:"none"}} href={bye.url}>{bye.title}</a></li>
+                                                <h1 className={styles.list}><a  style={{textDecoration:"none"}} href={bye.url}>{bye.title}</a></h1>
 
                                                 <p className={styles.paragraph2}>{bye.description}</p>
 
