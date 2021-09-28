@@ -1,6 +1,5 @@
 import styles from './Top5.module.css'
 import { sanityclient } from '../../lib/client'
-import Footer from "../../Components/Footer/footer"
 import { PortableText } from '../../lib/client';
 
 const Try = `*[_type=="top5"]{
