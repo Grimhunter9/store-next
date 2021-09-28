@@ -65,6 +65,35 @@
     margin-right: 15vw;
 }
 
+
+
+.endbody {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    background-color: black;
+    
+}
+
+.imgcontainer{
+   
+    padding-left: 8%;
+}
+
+.endlogo {
+    display: flex;
+    width: 4vw;
+    
+}
+
+.endtext{
+    color: white;
+    padding-top: 2%;
+    padding-right: 5%;
+}
+
 @media(max-width:1200px){
 
     .h1 {

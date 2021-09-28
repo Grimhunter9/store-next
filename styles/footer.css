@@ -1,16 +1,12 @@
 .endbody {
     display: flex;
     width: 100%;
-    position: absolute;
     justify-content: space-between;
     align-items: center;
-    top: 115vw;
-    z-index: 2;
     background-color: black;
-    
 }
 
-.imgcontainer{
+.imgcontainer {
     padding-top: 1%;
     padding-left: 8%;
 }
@@ -18,11 +14,20 @@
 .endlogo {
     display: flex;
     width: 4vw;
-    
 }
 
-.endtext{
+.endtext {
     color: white;
     padding-top: 2%;
     padding-right: 5%;
+}
+
+@media(max-width:1200px) {
+    .endlogo {
+        width: 12vw
+    }
+    .endtext {
+        font-size: 4vw;
+        padding-left: 10%;
+    }
 }

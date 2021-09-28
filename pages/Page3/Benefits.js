@@ -1,5 +1,6 @@
 import styles from './Benefits.module.css'
 import { sanityclient } from '../../lib/client'
+import Footer from "../../Components/Footer/footer"
 
 
 const ben = `*[_type=="benefits"]{
@@ -41,6 +42,9 @@ export default function Benefits({ Fits }) {
           ))
         }
 
+        <Footer/>
+
+
       </div>
 
     </div>
@@ -50,7 +54,7 @@ export default function Benefits({ Fits }) {
 
 
 export async function getStaticProps() {
-  const Fits = await  sanityclient.fetch(ben)
+  const Fits = await sanityclient.fetch(ben)
   return {
     props: { Fits }
   }

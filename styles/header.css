@@ -128,6 +128,8 @@
     }
     .collapse {
         background: rgba(0, 0, 0, 0.61);
+        padding-left: 8%;
+        line-height: 8vw;
     }
     .b {
         font-size: 5vw;
