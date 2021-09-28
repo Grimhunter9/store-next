@@ -13,7 +13,7 @@ export default function About({ das, naf, hep }) {
     const view = () => setModalShow(!modalShow);
 
     const view2 = () => setModalShow2(!modalShow2)
-
+    
 
 
     return (
@@ -49,7 +49,7 @@ export default function About({ das, naf, hep }) {
                         </div>
 
 
-                        <Modal onHide={() => setModalShow(false)} show={modalShow} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+                        <Modal onClick={view} onHide={() => setModalShow(false)} show={modalShow} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
 
                             <Modal.Header style={{ background: "#1E1C1F", color: "white" }}>
 
@@ -79,7 +79,7 @@ export default function About({ das, naf, hep }) {
                                         </div>
                                     ))
                                 }
-                                
+
                             </Modal.Body>
 
                         </Modal>
@@ -108,11 +108,11 @@ export default function About({ das, naf, hep }) {
                         </div>
 
 
-                        <Modal onHide={() => setModalShow2(false)} show={modalShow2} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+                        <Modal onClick={view2} onHide={() => setModalShow2(false)} show={modalShow2} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
 
                             <Modal.Header style={{ background: "#1E1C1F", color: "white" }}>
 
-                                <Modal.Title key={hep[0]}  className={styles.modalhead} id="contained-modal-title-vcenter">
+                                <Modal.Title key={hep[0]} className={styles.modalhead} id="contained-modal-title-vcenter">
                                     {hep[0].header}
                                 </Modal.Title>
 
@@ -133,7 +133,7 @@ export default function About({ das, naf, hep }) {
 
                                             <div className={styles.listcontainer}>
 
-                                                <h1 className={styles.list}><a  style={{textDecoration:"none"}} href={bye.url}>{bye.title}</a></h1>
+                                                <h1 className={styles.list}><a style={{ textDecoration: "none" }} href={bye.url}>{bye.title}</a></h1>
 
                                                 <p className={styles.paragraph2}>{bye.description}</p>
 
