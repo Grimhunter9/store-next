@@ -16,6 +16,8 @@ export default function Benefits({ Fits }) {
   return (
     <div className={styles.background} style={{ background: `url(${Fits[0].background.asset.url})`, backgroundSize: "cover" }}>
 
+
+
       <div className={styles.container}>
 
         <div>

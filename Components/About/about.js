@@ -13,7 +13,7 @@ export default function About({ das, naf, hep }) {
     const view = () => setModalShow(!modalShow);
 
     const view2 = () => setModalShow2(!modalShow2)
-    
+
 
 
     return (

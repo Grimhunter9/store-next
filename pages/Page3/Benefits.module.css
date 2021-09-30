@@ -11,15 +11,14 @@
     top: 38vw;
     border-top: 2.5px solid white;
     width: 100%;
-    background-image: url(/pattern.jpg);
-    background-size: cover;
+    background: #1E1C20;
 }
 
 .h1 {
     color: white;
     display: flex;
-    margin-left: 12vw;
-    margin-top: 2vw;
+    padding-left: 11%;
+    padding-top: 2%;
 }
 
 .imgcontainer {
@@ -62,6 +61,7 @@
     text-align: left;
     font-size: 1.5vw;
     margin-top: 2vw;
+    padding-bottom: 5%;
     margin-right: 15vw;
 }
 
