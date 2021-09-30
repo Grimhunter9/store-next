@@ -27,16 +27,16 @@ export default function Store({ Product }) {
                     {
                         Product && Product.map((info) => (
 
-                            <div className={styles.innerwrapper}>
+                            <div key={info} className={styles.innerwrapper}>
 
-                                <div className={styles.wrap}>
+                                <div key={info} className={styles.wrap}>
 
-                                    <img className={styles.img} src={info.thumbnail.asset.url} alt="" />
+                                    <img key={info} className={styles.img} src={info.thumbnail.asset.url} alt="" />
 
-                                    <h2 className={styles.product}>{info.title}</h2>
+                                    <h2 key={info} className={styles.product}>{info.title}</h2>
 
-                                    <div style={{ textAlign: "center" }}>
-                                        <a href={info.purchase} style={{ textDecoration: "none" }} className={styles.btn}>{Product[0].buttn}</a>
+                                    <div key={info} style={{ textAlign: "center" }}>
+                                        <a key={info} href={info.purchase} style={{ textDecoration: "none" }} className={styles.btn}>{Product[0].buttn}</a>
                                     </div>
 
                                 </div>
