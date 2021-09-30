@@ -2,8 +2,11 @@ import Link from 'next/link'
 import { Navbar, Nav } from 'react-bootstrap';
 import { BsSearch } from "react-icons/bs";
 import 'bootstrap/dist/css/bootstrap.css'
+import { useState } from 'react';
 
 export default function header() {
+
+    const [search , setsearch]=useState(null);
 
 
     return (
@@ -33,6 +36,7 @@ export default function header() {
                     </Nav>
 
                     <div className="search-box">
+                        
                         <button className="btn-search">
 
                             <BsSearch className="search-icon" />
