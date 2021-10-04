@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image"
 import { Navbar, Nav } from 'react-bootstrap';
 import { BsSearch } from "react-icons/bs";
 import { useState } from 'react';
@@ -16,7 +15,7 @@ export default function header() {
         <div className="Navbar-container">
 
             <Navbar collapseOnSelect expand="lg">
-                <Navbar.Brand><Link passHref href="/"><Image className="log" src="/final.jpg" alt="logo" /></Link></Navbar.Brand>
+                <Navbar.Brand><Link passHref href="/"><img className="log" src="/final.jpg" alt="logo" /></Link></Navbar.Brand>
 
                 <Navbar.Toggle className="toggle-btn" aria-controls="responsive-navbar-nav" />
 

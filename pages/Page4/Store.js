@@ -1,6 +1,5 @@
 import styles from './Store.module.css'
 import { sanityclient } from '../../lib/client'
-import Image from "next/image"
 
 
 
@@ -32,7 +31,7 @@ export default function Store({ Product }) {
 
                                 <div key={info} className={styles.wrap}>
 
-                                    <Image key={info} className={styles.img} src={info.thumbnail.asset.url} alt="" />
+                                    <img key={info} className={styles.img} src={info.thumbnail.asset.url} alt="product image" />
 
                                     <h2 key={info} className={styles.product}>{info.title}</h2>
 

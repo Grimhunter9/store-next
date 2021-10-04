@@ -1,6 +1,5 @@
 import styles from './Benefits.module.css'
 import { sanityclient } from '../../lib/client'
-import Image from "next/image"
 import Footer from "../../Components/Footer/footer"
 
 
@@ -33,7 +32,7 @@ export default function Benefits({ Fits }) {
 
               <div key={hum} className={styles.imgcontainer2}>
 
-                <Image key={hum.poster} src={hum.poster.asset.url} className={styles.img} alt="images of the benefits" />
+                <img key={hum.poster} src={hum.poster.asset.url} className={styles.img} alt="images of the benefits" />
 
               </div>
 

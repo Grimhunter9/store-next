@@ -1,5 +1,4 @@
 import styles from "./Info.module.css"
-import Image from "next/image"
 import Carousel from 'react-bootstrap/Carousel'
 import { sanityclient } from "../../lib/client"
 
@@ -31,7 +30,7 @@ export default function Info({ yo }) {
         {yo && yo.map((bye) => (
 
           <Carousel.Item key={bye} interval={1000} className={styles.change}>
-            <Image
+            <img
               key={bye.slider.asset.url}
               className={styles.slider}
               src={bye.slider.asset.url}
@@ -64,7 +63,7 @@ export default function Info({ yo }) {
 
             <div key={hi.slider.asset.url} className={styles.imgcontainer}>
 
-              <Image src={hi.slider.asset.url} className={styles.img} alt="images of the benefits" />
+              <img src={hi.slider.asset.url} className={styles.img} alt="images of the benefits" />
 
             </div>
 

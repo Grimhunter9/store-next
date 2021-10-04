@@ -1,7 +1,6 @@
 import styles from "./about.module.css"
 import Modal from 'react-bootstrap/Modal'
 import { useState } from "react";
-import Image from "next/image"
 
 
 export default function About({ das, naf, hep }) {
@@ -64,7 +63,7 @@ export default function About({ das, naf, hep }) {
 
                                 <div className={styles.imgcontainer}>
 
-                                    <Image key={naf[0]} className={styles.img} src={naf[0].poster.asset.url} alt="" />
+                                    <img key={naf[0]} className={styles.img} src={naf[0].poster.asset.url} alt="" />
 
                                 </div>
 
@@ -125,7 +124,7 @@ export default function About({ das, naf, hep }) {
 
                                     <div key={hep[0]} className={styles.imgcontainer}>
 
-                                        <Image key={hep[0]} className={styles.img} src={hep[0].poster.asset.url} alt="" />
+                                        <img key={hep[0]} className={styles.img} src={hep[0].poster.asset.url} alt="" />
 
                                     </div>
 
