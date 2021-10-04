@@ -1,4 +1,4 @@
-import styles from "./Respage.module.css"
+/*import styles from "./Respage.module.css"
 import { sanityclient } from "../../lib/client";
 import { useRouter } from 'next/router'
 import Image from "next/image"
@@ -7,7 +7,7 @@ import Image from "next/image"
 /*const Info = "*[(_type=='store') && title match '*" +slug+ "*']{ title,slug,description,buttn,purchase,thumbnail{asset->{url}}}"
 
 
-const {slug}=useRouter()*/
+const {slug}=useRouter()
 
 export default function Respage({ product }) {
 
