@@ -1,4 +1,4 @@
-import styles from "./Respage.module.css";
+import styles from "./Respage.module.css"
 import { sanityclient } from "../../lib/client";
 import { useRouter } from 'next/router'
 import Image from "next/image"
