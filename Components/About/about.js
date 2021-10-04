@@ -1,6 +1,7 @@
 import styles from "./about.module.css"
 import Modal from 'react-bootstrap/Modal'
 import { useState } from "react";
+import Image from "next/image"
 
 
 export default function About({ das, naf, hep }) {
@@ -63,14 +64,14 @@ export default function About({ das, naf, hep }) {
 
                                 <div className={styles.imgcontainer}>
 
-                                    <img key={naf[0]} className={styles.img} src={naf[0].poster.asset.url} alt="" />
+                                    <Image key={naf[0]} className={styles.img} src={naf[0].poster.asset.url} alt="" />
 
                                 </div>
 
                                 {
                                     naf && naf.map((hi) => (
 
-                                        <div className={styles.listcontainer}>
+                                        <div key={hi} className={styles.listcontainer}>
 
                                             <li className={styles.list}>{hi.reason}</li>
 
@@ -124,14 +125,14 @@ export default function About({ das, naf, hep }) {
 
                                     <div key={hep[0]} className={styles.imgcontainer}>
 
-                                        <img key={hep[0]} className={styles.img} src={hep[0].poster.asset.url} alt="" />
+                                        <Image key={hep[0]} className={styles.img} src={hep[0].poster.asset.url} alt="" />
 
                                     </div>
 
                                     {
                                         hep && hep.map((bye) => (
 
-                                            <div className={styles.listcontainer}>
+                                            <div key={bye} className={styles.listcontainer}>
 
                                                 <h1 className={styles.list}><a style={{ textDecoration: "none" }} href={bye.url}>{bye.title}</a></h1>
 

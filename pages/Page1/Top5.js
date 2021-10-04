@@ -1,4 +1,5 @@
 import styles from './Top5.module.css'
+import Image from "next/image"
 import { sanityclient } from '../../lib/client'
 import { PortableText } from '../../lib/client';
 
@@ -34,7 +35,7 @@ export default function Top5({ hello }) {
 
                             <div key={hum} className={styles.imgcontainer2}>
 
-                                <img key={hum.poster} src={hum.poster.asset.url} className={styles.img} alt="images of the benefits" />
+                                <Image key={hum.poster} src={hum.poster.asset.url} className={styles.img} alt="images of the benefits" />
 
                             </div>
 

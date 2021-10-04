@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"
 import { Navbar, Nav } from 'react-bootstrap';
 import { BsSearch } from "react-icons/bs";
 import { useState } from 'react';
@@ -6,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export default function header() {
 
-    const [search, setsearch] = useState(null);
+    /*const [search, setsearch] = useState(null);*/
 
 
 
@@ -15,7 +16,7 @@ export default function header() {
         <div className="Navbar-container">
 
             <Navbar collapseOnSelect expand="lg">
-                <Navbar.Brand><Link href="/"><img className="log" src="/final.jpg" /></Link></Navbar.Brand>
+                <Navbar.Brand><Link passHref href="/"><Image className="log" src="/final.jpg" alt="logo" /></Link></Navbar.Brand>
 
                 <Navbar.Toggle className="toggle-btn" aria-controls="responsive-navbar-nav" />
 
@@ -23,15 +24,15 @@ export default function header() {
 
                     <Nav className="Navbar">
 
-                        <Link href="/Page1/Top5"><nav className="b">Products</nav></Link>
+                        <Link passHref href="/Page1/Top5"><nav className="b">Products</nav></Link>
 
-                        <Link href="/Page2/Info"><nav className="b">Info</nav></Link>
+                        <Link passHref href="/Page2/Info"><nav className="b">Info</nav></Link>
 
-                        <Link href="/Page3/Benefits"><nav className="b">Benefits</nav></Link>
+                        <Link passHref href="/Page3/Benefits"><nav className="b">Benefits</nav></Link>
 
-                        <Link href="/Page4/Store"><nav className="b">Store</nav></Link>
+                        <Link passHref href="/Page4/Store"><nav className="b">Store</nav></Link>
 
-                        <Link href="/Page5/contacts"><nav className="b">Contact</nav></Link>
+                        <Link passHref href="/Page5/contacts"><nav className="b">Contact</nav></Link>
 
 
 
@@ -41,17 +42,19 @@ export default function header() {
 
                     <div className="search-box">
 
-                        <Link href='/Results/Respage' as={`/Results/${search}`}>
+                        <button type="submit" className="btn-search">
 
-                            <button type="submit" className="btn-search">
+                            <BsSearch className="search-icon" />
 
-                                <BsSearch  className="search-icon" />
+                        </button>
 
-                            </button>
+                        {/*<Link passHref href='/Results/Respage' as={`/Results/${search}`}>
 
-                        </Link>
 
-                        <input value={search}  onChange={(e) => setsearch(e.target.value)} type="text" className="input-search" placeholder="Type to Search..." required />
+
+                        </Link>*/}
+
+                        <input /*value={search}  onChange={(e) => setsearch(e.target.value) */ type="text" className="input-search" placeholder="Type to Search..." required / >
 
                     </div>
 
