@@ -1,5 +1,5 @@
-import styles from "./Respage.module.css"
-/*import { sanityclient } from "../../lib/client";
+/*import styles from "./Respage.module.css"
+import { sanityclient } from "../../lib/client";
 import { useRouter } from 'next/router'
 import Image from "next/image"*/
 
@@ -13,7 +13,9 @@ export default function Respage() {
 
 
     return (
-        <div className={styles.Container}>
+        <div /*className={styles.Container}*/>
+
+            hello
 
             {/*<h1 className={styles.h1}>Results:</h1>
 
