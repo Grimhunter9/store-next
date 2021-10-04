@@ -1,21 +1,21 @@
-/*import styles from "./Respage.module.css"
-import { sanityclient } from "../../lib/client";
+import styles from "./Respage.module.css"
+/*import { sanityclient } from "../../lib/client";
 import { useRouter } from 'next/router'
-import Image from "next/image"
+import Image from "next/image"*/
 
 
 /*const Info = "*[(_type=='store') && title match '*" +slug+ "*']{ title,slug,description,buttn,purchase,thumbnail{asset->{url}}}"
 
 
-const {slug}=useRouter()
+const {slug}=useRouter()*/
 
-export default function Respage({ product }) {
+export default function Respage() {
 
 
     return (
         <div className={styles.Container}>
 
-            <h1 className={styles.h1}>Results:</h1>
+            {/*<h1 className={styles.h1}>Results:</h1>
 
             <div className={styles.wrapper}>
 
@@ -45,7 +45,7 @@ export default function Respage({ product }) {
                     ))
                 }
 
-            </div>
+            </div>*/}
         </div>
     )
 
@@ -57,7 +57,8 @@ export default function Respage({ product }) {
         props: { product }
 
     }
-}*/
+}
 
 
 
+*/
