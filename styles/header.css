@@ -1,6 +1,6 @@
 .Navbar-container {
     z-index: 3;
-    position: absolute;
+    position: static;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.377);
 
@@ -29,23 +29,10 @@
     font-family: poppins;
     letter-spacing: 0.2em;
     cursor: pointer;
-    animation: color-change 8s infinite;
     
 }
 
-/*@keyframes color-change{
-    0% {  color: rgb(0, 255, 76); }
-    10% { color: red; }
-    20% { color: rgb(199, 45, 178); }
-    30% { color: orange; }
-    40% { color: yellow; }
-    50% { color: lime; }
-    60% { color: blue; }
-    70% { color: purple; }
-    80% { color: rgb(0, 238, 255, 0.26); }
-    90% { color: rgb(187, 255, 0); }
-    100% {color: rgb(255, 187, 0); }
-}*/
+
 
 
 

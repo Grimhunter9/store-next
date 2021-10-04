@@ -7,8 +7,8 @@
 
 .Grouper {
   width: 100%;
-  position: absolute;
-  top: 38vw;
+  position: relative;
+  margin-top: -20%;
 }
 
 .Video {
@@ -44,7 +44,9 @@
 }
 
 @media (max-width:1200px) {
-  .Grouper {
-    top: 80vw;
+
+  .Grouper{
+    margin-top: -70%;
   }
+
 }

@@ -13,14 +13,16 @@ const ben = `*[_type=="benefits"]{
 
 export default function Benefits({ Fits }) {
   return (
-    
+
     <div className={styles.allcontainer}>
 
       <div className={styles.background} style={{ background: `url(${Fits[0].background.asset.url})`, backgroundSize: "cover" }}>
 
+      </div>
 
 
-        <div className={styles.container}>
+
+      <div className={styles.container}>
 
         <div>
           <h1 key={Fits[0]} className={styles.h1}>{Fits[0].header}</h1>
@@ -46,13 +48,13 @@ export default function Benefits({ Fits }) {
           ))
         }
 
-        <Footer />
+
+
+
 
 
       </div>
-
-      </div>
-    </div>
+    </div >
   )
 
 }

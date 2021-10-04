@@ -3,6 +3,7 @@
     flex-direction: column;
     background: url(/kik.jpg);
     background-position: center;
+    margin-top: -7%;
     background-size:cover ;
 }
 
