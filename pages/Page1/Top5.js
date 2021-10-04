@@ -61,7 +61,7 @@ export default function Top5({ hello }) {
                                 </ul>
                             </div>
 
-                            <video className={styles.Video} width="100%" height="650px" autoPlay={false} controls={true}>
+                            <video className={styles.Video} width="100%" height="650px" autoPlay={true} muted controls={true}>
                                 <source style={{ background: "red" }} src={hum.vid.asset.url} type="video/mp4" />
                             </video>
 

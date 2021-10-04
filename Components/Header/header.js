@@ -1,12 +1,13 @@
-import Link from 'next/link'
+import Link from "next/link";
 import { Navbar, Nav } from 'react-bootstrap';
 import { BsSearch } from "react-icons/bs";
-import 'bootstrap/dist/css/bootstrap.css'
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.css'
 
 export default function header() {
 
-    const [search , setsearch]=useState(null);
+    const [search, setsearch] = useState(null);
+
 
 
     return (
@@ -29,21 +30,28 @@ export default function header() {
                         <Link href="/Page3/Benefits"><nav className="b">Benefits</nav></Link>
 
                         <Link href="/Page4/Store"><nav className="b">Store</nav></Link>
- 
+
+                        <Link href="/Page5/contacts"><nav className="b">Contact</nav></Link>
+
+
 
 
 
                     </Nav>
 
                     <div className="search-box">
-                        
-                        <button className="btn-search">
 
-                            <BsSearch className="search-icon" />
+                        <Link href='/Results/Respage' as={`/Results/${search}`}>
 
-                        </button>
+                            <button type="submit" className="btn-search">
 
-                        <input type="text" className="input-search" placeholder="Type to Search..." />
+                                <BsSearch  className="search-icon" />
+
+                            </button>
+
+                        </Link>
+
+                        <input value={search}  onChange={(e) => setsearch(e.target.value)} type="text" className="input-search" placeholder="Type to Search..." required />
 
                     </div>
 
