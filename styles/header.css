@@ -118,6 +118,7 @@
 @media(max-width:1200px) {
     .Navbar-container {
         z-index: 4;
+        position: absolute;
     }
     .log {
         width: 15vw;

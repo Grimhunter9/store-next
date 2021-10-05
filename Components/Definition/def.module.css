@@ -1,3 +1,13 @@
+.allcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+
 .container {
     display: flex;
     border-top: 2px solid white;
@@ -15,9 +25,10 @@
     font-weight: bolder;
     text-shadow: 3px 3px 3px #4D3545;
     font-size: 50px;
-    position: absolute;
-    left: 170px;
-    top: 20px;
+    
+    padding-left: 11%;
+
+    padding-top: 5%;
     font-family: 'Playfair Display', serif;
     color: white;
     animation: fadein 6s;
@@ -56,14 +67,16 @@
 
 
 @media(max-width:1200px) {
+
+    .allcontainer{
+        margin-top: -50%;
+        
+    }
     .back {
         height:auto;  
     }
 
     .h1 {
-        margin-left: 12vw;
-        left: 10px;
-        top: 10px;
         font-size: 8vw;
     }
 
