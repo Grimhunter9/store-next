@@ -65,15 +65,11 @@ export default function Home({ Test, Def, das, naf, hep }) {
         <div className={styles.container}>
 
 
-
             <Screen Test={Test} />
 
-            <div className={styles.Grouper}>
 
-                <Definition Def={Def} das={das} naf={naf} hep={hep} />
+            <Definition Def={Def} das={das} naf={naf} hep={hep} />
 
-
-            </div>
 
         </div>
     )

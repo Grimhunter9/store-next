@@ -2,18 +2,26 @@ import styles from "./contacts.module.css"
 import { sanityclient } from '../../lib/client'
 
 
-const co = `*[_type=="Contacts"]{title,header, BG{asset->{url}},}`
+const co = `*[_type=="Contacts"]
+{ 
+    title,
+    header,
+    BG{asset->{url}},
+    Cards{asset->{url}},
+    info,
+    Check,
+}`
 
 export default function contacts({ contact }) {
 
     return (
         <div className={styles.allcontainer}>
 
-            <div key={contact[0]} className={styles.background} style={{ background: `url(${contact[0].BG.asset.url})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+            <div key={contact[1]} className={styles.background} style={{ background: `url(${contact[1].BG.asset.url})`, backgroundSize: "cover", }}>
 
-                <div className={styles.title} key={contact[0]}>{contact[0].title}</div>
+                <div className={styles.title} key={contact[1]}>{contact[1].title}</div>
 
-                <div className={styles.header} key={contact[0]}>{contact[0].header}</div>
+                <div className={styles.header} key={contact[1]}>{contact[1].header}</div>
 
             </div>
 
@@ -22,17 +30,22 @@ export default function contacts({ contact }) {
 
             <div className={styles.cardwrapper}>
 
-                <div className={styles.wrap}>
+                <div key={contact[1]} className={styles.wrap} style={{ background: `url(${contact[1].Cards.asset.url})`, backgroundSize: "cover", backgroundPosition: "center" }} >
 
-                    <h1>hello there card 1</h1>
+                    <h1 className={styles.info} key={contact[1]} >{contact[1].info}</h1>
+
+                    <button className={styles.check} key={contact[1]}>{contact[1].Check}</button>
+
 
 
                 </div>
 
 
-                <div className={styles.wrap}>
+                <div key={contact[0]} className={styles.wrap} style={{ background: `url(${contact[0].Cards.asset.url})`, backgroundSize: "cover", backgroundPosition: "center" }}>
 
-                    <h1>hello there card 2</h1>
+                    <h1 className={styles.info} key={contact[0]}>{contact[0].info}</h1>
+
+                    <button className={styles.check2} key={contact[1]}>{contact[0].Check}</button>
 
                 </div>
 

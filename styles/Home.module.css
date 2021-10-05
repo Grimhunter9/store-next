@@ -5,11 +5,6 @@
   align-items: center;
 }
 
-.Grouper {
-  width: 100%;
-  position: relative;
-  margin-top: -20%;
-}
 
 .Video {
   display: flex;
@@ -43,10 +38,3 @@
   padding-right: 5%;
 }
 
-@media (max-width:1200px) {
-
-  .Grouper{
-    margin-top: -70%;
-  }
-
-}

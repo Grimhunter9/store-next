@@ -1,14 +1,11 @@
-
 .allcontainer {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     width: 100%;
     height: auto;
-    background: #1E1C20;;
+    background: #1E1C20;
     margin-top: -7%;
-
 }
 
 .background {
@@ -63,20 +60,54 @@
     }
 }
 
-
-
 .cardwrapper {
     display: flex;
     justify-content: space-around;
+    border-top: 2px solid white;
     width: 100%;
 }
 
 .wrap {
-   display: flex;
-    background: rgb(218, 209, 210);
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    background-position: center;
+    object-fit: cover;
     width: 25vw;
     margin-top: -5vw;
     height: 30vw;
     border-radius: 5%;
+}
+
+.info{
+    display: flex;
+    font-size: 30px;
+    padding-top: 2%;
+    line-height: 3vw;
+    padding-left: 2%;
+    color: black;
+}
+
+.check{
+    display: flex;
+    font-size: 30px;
+    margin-top: 65%;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+
+.check2{
+    display: flex;
+    font-size: 30px;
+    margin-top: 52%;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-left: 26%;
+    border-radius: 10px;
 }

@@ -3,7 +3,7 @@ import About from "../About/about"
 
 
 export default function def({ Def, das, naf, hep }) {
-
+ 
     return (
         <div className={styles.allcontainer}>
 
@@ -20,7 +20,7 @@ export default function def({ Def, das, naf, hep }) {
 
                     </div>
 
-                </div>
+    </div>
             </div>
 
         </div>
