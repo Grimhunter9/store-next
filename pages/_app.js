@@ -16,14 +16,14 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <div className="Container">
-      
+
       <Head />
-     
+
       <Navbar />
 
       <Component {...pageProps} />
 
-      <Footer/>
+      <Footer />
 
     </div>
   )

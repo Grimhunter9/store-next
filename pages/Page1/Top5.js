@@ -65,11 +65,6 @@ export default function Top5({ hello }) {
                                 <source style={{ background: "red" }} src={hum.vid.asset.url} type="video/mp4" />
                             </video>
 
-
-
-
-
-
                         </div>
                     ))
                 }
