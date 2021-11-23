@@ -52,6 +52,22 @@
     overflow: auto;
 }
 
+.phonemod{
+    background: beige;
+    width: 50vw;
+    height: 80px;
+    color: red;
+    font-Size: 3vw;
+}
+
+.emailmod{
+    background: beige;
+    width: 50vw;
+    height: 80px;
+    color: red;
+    font-Size: 3vw;
+}
+
 @keyframes color-change {
     0% {
         color: rgb(0, 255, 76);

@@ -1,6 +1,6 @@
 import styles from "./contacts.module.css"
 import { sanityclient } from '../../lib/client'
-import { useState } from "react"
+import { useState } from "react";
 
 
 const co = `*[_type=="Contacts"]
@@ -15,17 +15,19 @@ const co = `*[_type=="Contacts"]
 
 export default function contacts({ contact }) {
 
-    const [addphone, setphone] = useState(false);
-    const [addemail, setemail] = useState(false)
+  
+    const [addphone, setshow] = useState(false)
 
-    const closephone = () => setphone(!addphone)
-
-    const view = () => setphone(true)
-
-
-    const closemail = () => setemail(!addemail)
-
-    const view2 = () => setemail(true)
+    const [addemail, setshow2] = useState(false)
+  
+    const closephone = () => setshow(!addphone)
+  
+    const view = () => setshow(true)
+  
+  
+    const closemail = () => setshow2(!addemail)
+  
+    const view2 = () => setshow2(true)
 
 
 
@@ -61,8 +63,6 @@ export default function contacts({ contact }) {
                 </div>
 
 
-
-
                 <div key={contact[0]} className={styles.wrap} style={{ background: `url(${contact[0].Cards.asset.url})`, backgroundSize: "cover", backgroundPosition: "center" }}>
 
                     <h1 className={styles.info} key={contact[0]}>{contact[0].info}</h1>
@@ -76,17 +76,14 @@ export default function contacts({ contact }) {
             {/*What the modals have inside them for both phone and email */}
 
             <div onClick={closephone} style={{ display: addphone ? "" : "none" }} className={styles.outerdiv}>
-                <p style={{ background: "beige", width: "50vw", height: "80px", color: "red", fontSize: "3vw" }}>Here is the phone modal to add here</p>
+                <p className={styles.phonemod}>Here is the phone modal to add here</p>
             </div>
 
             <div onClick={closemail} style={{ display: addemail ? "" : "none" }} className={styles.outerdiv}>
-                <p style={{ background: "beige", width: "50vw", height: "80px", color: "red", fontSize: "3vw" }}>Here is the email modal to add here</p>
+                <p className={styles.emailmod}>Here is the email modal to add here</p>
             </div>
 
         </div>
-
-
-
 
 
     )
