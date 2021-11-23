@@ -13,7 +13,7 @@ const co = `*[_type=="Contacts"]
     Check,
 }`
 
-export default function contacts({ contact }) {
+export default function Contacts({ contact }) {
 
   
     const [addphone, setshow] = useState(false)
