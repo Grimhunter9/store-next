@@ -7,6 +7,9 @@ const co = `*[_type=="Contacts"]
 { 
     title,
     header,
+    About,
+    Information,
+    Information2,
     BG{asset->{url}},
     Cards{asset->{url}},
     info,
@@ -71,12 +74,15 @@ export default function Contacts({ contact }) {
 
             <div className={styles.phonecon}>
             <img  key={contact[1]} src={contact[1].BG.asset.url} className={styles.pic} />
-                    <p className={styles.phonemod}>Here is the phone modal to add here</p>
-                    <div>you can call us here</div>
+                    <p className={styles.phonemod} key={contact[1]}>{contact[1].About}</p>
+
+                    <div>
+                        <p className={styles.phone1} key={contact[1]}>{contact[1].Information}</p>
+                        <p className={styles.phone2} key={contact[1]}>{contact[1].Information2}</p>
+                    </div>
             </div>
             
             </div>
-
 
             <div onClick={closemail} style={{ display: addemail ? "" : "none" }} className={styles.outerdiv}>
                 

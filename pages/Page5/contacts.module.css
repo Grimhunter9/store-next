@@ -27,6 +27,7 @@
     padding-bottom: 5%;
     padding-left: 11%;
     width: 100%;
+
 }
 
 .header {
@@ -160,20 +161,47 @@
 }
 
 .phonemod {
-    color: red;
+    color: rgb(34, 31, 31);
+    font-family: cursive;
     font-size: 30px;
+    position: absolute;
+    top: 60px;
 }
 
+.phone1{
+    position: absolute;
+    color: rgb(0, 110, 255);
+    font-size: 25px;
+    font-family: 'Manrope', sans-serif;
+    left: 120px;
+    font-weight: bolder;
+}
+
+.phone2{
+    position: absolute;
+    color: rgb(0, 110, 255);
+    font-size: 25px;
+    font-family: 'Manrope', sans-serif;
+    bottom: 40px;
+    left: 120px;
+    font-weight: bolder;
+}
+
+
+
 .emailmod {
-    color: red;
+    color: rgb(34, 31, 31);
+    font-family: cursive;
     font-size: 30px;
+    position: absolute;
+    top: 60px;
 }
 
 .pic, .pic2 {
     width: 8vw;
     height: 8vw;
-    margin: 0;
-    margin-top: -200px;
+    position: absolute;
+    top: -60px;
 }
 
 .pic2 {
