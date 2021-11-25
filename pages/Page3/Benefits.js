@@ -1,7 +1,5 @@
 import styles from './Benefits.module.css'
 import { sanityclient } from '../../lib/client'
-import Footer from "../../Components/Footer/footer"
-
 
 const ben = `*[_type=="benefits"]{
   title,
@@ -45,14 +43,7 @@ export default function Benefits({ Fits }) {
             </div>
 
 
-          ))
-        }
-
-
-
-
-
-
+          ))}
       </div>
     </div >
   )

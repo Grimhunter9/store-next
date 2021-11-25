@@ -14,7 +14,6 @@ const co = `*[_type=="Contacts"]
 }`
 
 export default function Contacts({ contact }) {
-
   
     const [addphone, setshow] = useState(false)
 
@@ -23,8 +22,7 @@ export default function Contacts({ contact }) {
     const closephone = () => setshow(!addphone)
   
     const view = () => setshow(true)
-  
-  
+
     const closemail = () => setshow2(!addemail)
   
     const view2 = () => setshow2(true)
@@ -34,18 +32,13 @@ export default function Contacts({ contact }) {
     return (
         <div className={styles.allcontainer}>
 
+            <div key={contact[2]} className={styles.background} style={{ background: `url(${contact[2].BG.asset.url})`, backgroundSize: "cover", }}>
 
+                <div className={styles.title} key={contact[2]}>{contact[2].title}</div>
 
-            <div key={contact[1]} className={styles.background} style={{ background: `url(${contact[1].BG.asset.url})`, backgroundSize: "cover", }}>
-
-                <div className={styles.title} key={contact[1]}>{contact[1].title}</div>
-
-                <div className={styles.header} key={contact[1]}>{contact[1].header}</div>
+                <div className={styles.header} key={contact[2]}>{contact[2].header}</div>
 
             </div>
-
-
-
 
 
 
@@ -59,7 +52,6 @@ export default function Contacts({ contact }) {
                     <h1 className={styles.info} key={contact[1]} >{contact[1].info}</h1>
 
                     <button onClick={view} className={styles.check} key={contact[1]}>{contact[1].Check}</button>
-
                 </div>
 
 
@@ -76,11 +68,24 @@ export default function Contacts({ contact }) {
             {/*What the modals have inside them for both phone and email */}
 
             <div onClick={closephone} style={{ display: addphone ? "" : "none" }} className={styles.outerdiv}>
-                <p className={styles.phonemod}>Here is the phone modal to add here</p>
+
+            <div className={styles.phonecon}>
+            <img  key={contact[1]} src={contact[1].BG.asset.url} className={styles.pic} />
+                    <p className={styles.phonemod}>Here is the phone modal to add here</p>
+                    <div>you can call us here</div>
+            </div>
+            
             </div>
 
+
             <div onClick={closemail} style={{ display: addemail ? "" : "none" }} className={styles.outerdiv}>
-                <p className={styles.emailmod}>Here is the email modal to add here</p>
+                
+                <div className={styles.emailcon}>
+                <img  key={contact[0]} src={contact[0].BG.asset.url} className={styles.pic2} />
+                    <p className={styles.emailmod}>Here is the email modal to add here</p>
+                    <div>you can email us here</div>
+                </div>
+                
             </div>
 
         </div>
@@ -94,7 +99,6 @@ export async function getStaticProps() {
     const contact = await sanityclient.fetch(co);
 
     return {
-
         props: { contact }
     }
 }

@@ -31,7 +31,7 @@ export default function header() {
 
                         <Link passHref href="/Page4/Store"><nav className="b">Store</nav></Link>
 
-                        <Link passHref href="/Page5/contacts"><nav className="b">Contact</nav></Link>
+                        <Link passHref href="/Page5/contacts"><nav className="b">Contacts</nav></Link>
 
 
 
