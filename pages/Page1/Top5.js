@@ -3,7 +3,6 @@ import { sanityclient } from '../../lib/client'
 import { PortableText } from '../../lib/client';
 
 const Try = `*[_type=="top5"]{
-    
     title,
     header,
     description,

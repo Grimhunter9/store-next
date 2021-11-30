@@ -20,11 +20,11 @@ export default function () {
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet" />
 
-
-               
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
                 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet"></link>
 
+
+                <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
             </Head>
 
 

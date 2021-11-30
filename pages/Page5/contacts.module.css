@@ -146,6 +146,17 @@
     flex-direction: column;
 }
 
+.phonecon{
+background-color: #fd5f40;
+}
+
+.emailcon {
+    height: 38%;
+    top: -560px;
+    background-color: #21A6EF ;
+    
+}
+
 
 
 
@@ -160,26 +171,20 @@
     }
 }
 
-.phonemod {
-    color: rgb(34, 31, 31);
-    font-family: cursive;
-    font-size: 30px;
-    position: absolute;
-    top: 60px;
-}
 
-.phone1{
+
+.phone1 {
     position: absolute;
-    color: rgb(0, 110, 255);
+    color: white;
     font-size: 25px;
     font-family: 'Manrope', sans-serif;
     left: 120px;
     font-weight: bolder;
 }
 
-.phone2{
+.phone2 {
     position: absolute;
-    color: rgb(0, 110, 255);
+    color:white;
     font-size: 25px;
     font-family: 'Manrope', sans-serif;
     bottom: 40px;
@@ -187,12 +192,19 @@
     font-weight: bolder;
 }
 
+.phonemod , .emailmod {
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+}
 
 
 .emailmod {
-    color: rgb(34, 31, 31);
+    
     font-family: cursive;
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     top: 60px;
 }
@@ -207,4 +219,37 @@
 .pic2 {
     width: 7vw;
     height: 7vw;
+}
+
+
+.form {
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+    width: 80%;
+    height: 60%;
+}
+
+
+.form_name, .form_email , .form_info, .form_bttn{
+    background-color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.form_info{
+    padding-top: 30px;
+}
+
+.form_bttn{
+    width: 20%;
+}
+
+
+.form_name, .form_email , .form_info, .form_bttn::placeholder{
+    color:black;
 }

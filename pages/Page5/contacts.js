@@ -31,8 +31,10 @@ export default function Contacts({ contact }) {
     const view2 = () => setshow2(true)
 
 
-
     return (
+
+        //The content begining of the contacts page
+
         <div className={styles.allcontainer}>
 
             <div key={contact[2]} className={styles.background} style={{ background: `url(${contact[2].BG.asset.url})`, backgroundSize: "cover", }}>
@@ -84,12 +86,24 @@ export default function Contacts({ contact }) {
             
             </div>
 
-            <div onClick={closemail} style={{ display: addemail ? "" : "none" }} className={styles.outerdiv}>
+            <div  style={{ display: addemail ? "" : "none" }} className={styles.outerdiv}>
                 
                 <div className={styles.emailcon}>
                 <img  key={contact[0]} src={contact[0].BG.asset.url} className={styles.pic2} />
-                    <p className={styles.emailmod}>Here is the email modal to add here</p>
-                    <div>you can email us here</div>
+                         <p className={styles.emailmod} key={contact[0]}>{contact[0].About}</p>
+                         
+                    <form  className={styles.form} action= "https://send.pageclip.co/fbD9KN7WDTR3AecfRTie9cAypE0LXAEx/Stuyinukraine" class="pageclip-form" method="post">
+
+                        <input className={styles.form_name} type="text" name="name" required placeholder="Enter your Name..."></input>
+                        <input className={styles.form_email} type="text" name="email" required placeholder="Enter your email..."></input>
+                        <textarea className={styles.form_info} type="text" name="body" required placeholder="Ask us Anything..." ></textarea>
+
+                        <button onClick={closemail} className={styles.form_bttn} class="pageclip-form__submit" type="submit" >
+                           submit
+                        </button>
+
+                    </form>
+                    
                 </div>
                 
             </div>
