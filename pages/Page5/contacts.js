@@ -92,13 +92,13 @@ export default function Contacts({ contact }) {
                 <img  key={contact[0]} src={contact[0].BG.asset.url} className={styles.pic2} />
                          <p className={styles.emailmod} key={contact[0]}>{contact[0].About}</p>
                          
-                    <form  className={styles.form} action= "https://send.pageclip.co/fbD9KN7WDTR3AecfRTie9cAypE0LXAEx/Stuyinukraine" class="pageclip-form" method="post">
+                    <form  className={styles.form} action= "https://send.pageclip.co/fbD9KN7WDTR3AecfRTie9cAypE0LXAEx/Stuyinukraine" Class="pageclip-form" method="post">
 
                         <input className={styles.form_name} type="text" name="name" required placeholder="Enter your Name..."></input>
                         <input className={styles.form_email} type="text" name="email" required placeholder="Enter your email..."></input>
                         <textarea className={styles.form_info} type="text" name="body" required placeholder="Ask us Anything..." ></textarea>
 
-                        <button onClick={closemail} className={styles.form_bttn} class="pageclip-form__submit" type="submit" >
+                        <button onClick={closemail} className={styles.form_bttn} Class="pageclip-form__submit" type="submit" >
                            submit
                         </button>
 
